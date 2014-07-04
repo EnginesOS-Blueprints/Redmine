@@ -1,0 +1,15 @@
+name: redmine-test
+framework:
+ type: rails3
+ runtime: Ruby1.9
+buildpack: git://git@54.79.79.134/ruby_buildpack.git
+services:
+ redmine-test: mysql
+
+hooks:
+ pre-staging:
+  - bash stackato-pre-setup.sh
+ post-staging:
+  - bash stackato-setup.sh
+ pre-running:
+  - sh completeinstall.sh
