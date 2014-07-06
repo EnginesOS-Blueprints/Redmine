@@ -1,7 +1,7 @@
 name: redmine-test
 framework:
- type: rails3
- runtime: Ruby1.9
+ type: rails4
+ runtime: ruby2
 buildpack: git://git@54.79.79.134/ruby_buildpack.git
 services:
  redmine-test: mysql
