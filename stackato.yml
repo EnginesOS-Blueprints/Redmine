@@ -1,4 +1,5 @@
 name: redmine-test
+memory: 128
 framework:
  type: rails4
  runtime: ruby2
