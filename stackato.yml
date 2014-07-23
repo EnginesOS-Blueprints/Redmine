@@ -1,9 +1,8 @@
 name: redmine-test
-memory: 128
+memory: 196
 framework:
  type: rails4
  runtime: ruby2
-buildpack: git://git@54.79.79.134/ruby_buildpack.git
 services:
  redmine-test: mysql
 
