@@ -5,6 +5,10 @@ framework:
  runtime: ruby2
 services:
  redmine-test: mysql
+requirements:
+ running:
+  ubuntu:
+   - libmagickwand-dev imagemagick 
 
 hooks:
  pre-staging:
