@@ -1,14 +1,11 @@
 name: redmine-test
-memory: 196
+memory: 128
 framework:
  type: rails4
  runtime: ruby2
 services:
- redmine-test: mysql
-requirements:
- running:
-  ubuntu:
-   - libmagickwand-dev imagemagick 
+ redminedb-test: mysql
+ redminefs-test: filesystem
 
 hooks:
  pre-staging:
