@@ -6,6 +6,10 @@ framework:
 services:
  redminedb-test: mysql
  redminefs-test: filesystem
+requirements:
+ running:
+  ubuntu:
+   - imagemagick libmagickwand-dev 
 
 hooks:
  pre-staging:
